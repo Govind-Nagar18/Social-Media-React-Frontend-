@@ -125,7 +125,7 @@ export default function Home({ debouncesearch }) {
               <img
                 src={`${baseURL}/${post.poster}`}
                 alt="Post"
-                className="w-full h-48 object-cover rounded-lg mb-3"
+                className="w-full h-48 object-cover rounded-lg mb-3 "
               />
             )}
             <div className="flex flex-wrap gap-2 mb-2">
@@ -229,7 +229,7 @@ export default function Home({ debouncesearch }) {
                 <img
                   src={`${baseURL}/${post.user.image}`}
                   alt="User Avatar"
-                  className="w-12 h-12 rounded-full object-cover"
+                  className="w-12 h-12 border-2 border-blue-200 p-1 rounded-full object-cover"
                 />
                 <div>
                   <p className="font-semibold text-gray-800">
@@ -246,7 +246,7 @@ export default function Home({ debouncesearch }) {
                 <img
                   src={`${baseURL}/${post.poster}`}
                   alt="Post"
-                  className="w-full h-48 object-cover rounded-lg mb-3"
+                  className="w-full h-48 border-2 border-blue-200 object-cover p-1 rounded-lg mb-3"
                 />
               )}
               <div className="flex flex-wrap gap-2 mb-2">

@@ -174,7 +174,7 @@ export default function Profile() {
                         <img
                           src={`${baseURL}/${post.poster}`}
                           alt="Post Poster"
-                          className="w-full h-48 object-cover rounded mb-2"
+                          className="w-full h-48 border-2 border-blue-200 p-1  object-cover rounded mb-2"
                         />
                         <div className="flex items-center space-x-3 mb-3">
                           <img
