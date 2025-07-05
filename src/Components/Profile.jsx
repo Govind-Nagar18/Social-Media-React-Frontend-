@@ -26,6 +26,7 @@ export default function Profile() {
           },
         });
         setMyPost(response.data);
+        console.log(response.data)
       } catch (error) {
         console.error("Error fetching my posts:", error);
         alert("Failed to fetch your posts. Please try again later.");

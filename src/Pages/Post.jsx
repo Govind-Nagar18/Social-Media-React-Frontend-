@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Axiosinstance from "../axiosinstance";
+import { useNavigate } from "react-router-dom";
 
 export default function Post() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [poster, setPoster] = useState(null);
+
+  const navigate = useNavigate();
 
   const api = Axiosinstance;
 
@@ -33,6 +36,7 @@ export default function Post() {
         }
       );
       alert("Post created!");
+      navigate('/profile')
     } catch (error) {
       console.error("Error creating post:", error);
       alert("Failed to create post.");
